@@ -17,6 +17,10 @@ p:last-child {
   margin-bottom: 0;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -37,3 +41,5 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
