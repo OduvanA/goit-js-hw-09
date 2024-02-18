@@ -1,4 +1,6 @@
-'use strict'
+
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
 
 const images = [
   {
@@ -81,8 +83,6 @@ const markup = images.map(({preview, original, description}) =>
   .join("");
 gallery.insertAdjacentHTML("beforeend", markup);
 
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData:	'alt',
   captionPosition: 'bottom',

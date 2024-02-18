@@ -1,5 +1,3 @@
-'use strict'
-
 const form = document.querySelector(".feedback-form");
 
 const isStorageData = localStorage.getItem("feedback-form-state");
@@ -10,7 +8,6 @@ if (isStorageData){
 }
 
 form.addEventListener('input', (event) => {
-  event.preventDefault();
   const email = event.currentTarget.email.value.trim();
   const message = event.currentTarget.message.value.trim();
   const storageData = {
